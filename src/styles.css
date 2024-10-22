@@ -1,0 +1,203 @@
+/* App-wide styling */
+.app-container {
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f7f7f7;
+}
+
+.display-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.dropdowns select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Kanban board layout */
+.kanban-board {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Group column layout */
+.group {
+  width: 22%;
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Column Icons */
+.white-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.yellow-half-moon {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: yellow;
+  position: relative;
+  background-clip: content-box;
+}
+
+.yellow-half-moon::before {
+  content: "◑";
+  position: absolute;
+  color: yellow;
+  font-size: 12px;
+}
+
+.purple-tick {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: purple;
+  position: relative;
+}
+
+.purple-tick::before {
+  content: "✔";
+  position: absolute;
+  top: -1px;
+  left: 2px;
+  color: white;
+  font-size: 8px;
+}
+
+.gray-cross {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  position: relative;
+}
+
+.gray-cross::after {
+  content: "✕";
+  position: absolute;
+  top: -2px;
+  left: 1px;
+  color: white;
+  font-size: 12px;
+}
+
+.group-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.ticket-count {
+  font-size: 14px;
+  color: #666;
+  margin-left: 5px;
+}
+
+.add-column,
+.more-options {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.tickets {
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket-card {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+}
+
+.ticket-card:hover {
+  transform: scale(1.05);
+}
+
+.ticket-id {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.ticket-feature-request {
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+
+.wifi-signal,
+.circle-dots {
+  margin-left: 5px;
+}
+
+.wifi-signal::before {
+  content: "\1F4F6"; /* Wi-Fi signal unicode */
+}
+
+.circle-dots::before {
+  content: "\2026"; /* Three dots unicode */
+}
+
+.ticket-avatar {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.default-avatar,
+.profile-5,
+.profile-8,
+.AS,
+.MG {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+}
+
+.profile-5 {
+  background-color: orange;
+}
+
+.profile-8 {
+  background-color: lightgreen;
+}
+
+.AS {
+  background-color: orange;
+  color: white;
+}
+
+.MG {
+  background-color: green;
+  color: white;
+}
